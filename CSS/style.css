@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.corpo{
+    background: url("../img/fundo2.png");
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#pontuacao {
+    position: absolute;
+    top: 30px;
+    right: 100px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: monospace;
+    color: white;
+}
+
+#board {
+    width: 90vh;
+    height: 90vh;
+    background: rgb(159,159,159);
+    background: linear-gradient(90deg, rgba(159,159,159,0.5970763305322129) 0%, rgba(159,159,159,0.5998774509803921) 35%, rgba(159,159,159,0.5970763305322129) 100%);
+    border-radius: 8px;
+    border: 1px solid #000000;
+    display: grid;
+    grid-template-columns: repeat(30,1fr);
+    grid-template-rows: repeat(30, 1fr);
+}
+
+div.head {
+    background-color: black;
+    border-radius: 30%;
+    transform: scale(1.02);
+}
+
+div.snake{
+    background-color: salmon;
+    border-radius: 50%;
+}
+
+div.fruit{
+    background: url("../img/maca.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
